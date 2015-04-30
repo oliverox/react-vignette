@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>React Calendar Demo</title>
+    <title>React Vignette Demo</title>
 
     <!-- Used to style this page (not required)-->
     <link rel="stylesheet" type="text/css" href="http://getskeleton.com/dist/css/skeleton.css"/>
@@ -10,10 +10,14 @@
       body {
         font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
+      #vignette-demo {
+        width: 500px;
+        height: 800px;
+      }
     </style>
 
     <!-- Be sure to include the stylesheet react-cal.css -->
-    <link rel="stylesheet" type="text/css" href="../dist/react-cal.css"/>
+    <link rel="stylesheet" type="text/css" href="../dist/react-vignette.css"/>
 
     <!-- React is a dependency of react-cal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js"></script>
@@ -21,28 +25,40 @@
     <!-- Underscore is a dependency of react-cal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 
-    <!-- Moment is a dependency of react-cal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.js"></script>
-
     <script> __REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.React </script>
 
-
-    <!-- react-cal -->
-    <script src="../dist/react-cal.js"></script>
+    <!-- react-vignette -->
+    <script src="../dist/react-vignette.js"></script>
   </head>
   <body>
 
     <div class="container">
       <div class="row">
         <div class="column" style="margin-top: 100px;">
-          <h4>React-cal</h4>
-          <div id="demo" class="calendar-container"></div>
+          <h4>React-vignette</h4>
+          <div id="vignette-demo"></div>
         </div>
       </div>
     </div>
 
     <script>
-        React.render(React.createElement(Reactcal.Calendar, {view: "month"}), document.getElementById('demo'));
+        React.render(React.createElement(Vignette.Gallery, {
+          images: [
+            {
+              url: "http://static1.squarespace.com/static/54d57485e4b093f504ed7f60/54fe1e53e4b05f158aaa56a8/54fe1e8ae4b05f158aaa57f4/1425940123096/IMG_7203.jpg?format=2500w",
+              title: "Sea Turtle"
+            }, {
+              url: "http://static1.squarespace.com/static/54d57485e4b093f504ed7f60/54fe1e53e4b05f158aaa56a8/54fe1ea7e4b05f158aaa5892/1425940147661/IMG_9855.jpg?format=2500w",
+              title: "Sunset"
+            }, {
+              url: "http://static1.squarespace.com/static/54d57485e4b093f504ed7f60/54fe1e53e4b05f158aaa56a8/54fe1e92e4b0058d6857c0bf/1425940118717/PC010099.JPG?format=2500w",
+              title: "Swimming 1"
+            }, {
+              url: "http://static1.squarespace.com/static/54d57485e4b093f504ed7f60/54fe1e53e4b05f158aaa56a8/54fe1ef7e4b05f158aaa5ab7/1425940235942/PC010031.JPG?format=2500w",
+              title: "Swimming 2"
+            }
+          ]
+        }), document.getElementById("vignette-demo"));
     </script>
   </body>
 </html>

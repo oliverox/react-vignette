@@ -1,0 +1,76 @@
+.rv-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.rv-container .control-button {
+  position: absolute;
+  top: 60%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #333;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.rv-container .left-arrow {
+  left: 0;
+}
+.rv-container .right-arrow {
+  right: 0;
+}
+.rv-container .control-button .icon {
+  width: 20px;
+  height: 20px;
+  margin: 13px auto;
+}
+.rv-container .left-chevron {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46"><path d="M34.997 40.094c1.338 1.352 1.338 3.54 0 4.893-1.338 1.35-3.506 1.352-4.846 0l-19.147-19.54c-1.338-1.352-1.338-3.543 0-4.895L30.15 1.014c1.34-1.352 3.507-1.352 4.847 0 1.338 1.352 1.338 3.54 0 4.893L19.294 23l15.703 17.094z" fill="#fff"/></svg>');
+}
+.rv-container .right-chevron {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315.5 315.5"><path d="M242 141L109 8c-5-5-12-8-18-8S79 3 74 8c-10 10-10 24 0 34l116 116L74 274c-10 10-10 24 0 34s25 10 35 0l133-133c5-5 7-11 7-17 0-7-2-12-7-17z" fill="#fff"/></svg>');
+}
+.rv-container .slider-container {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+}
+.rv-container .slider-container .img-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.rv-container .slider-container .img-container img {
+  height: 100%;
+}
+.rv-container .slider-container .prev {
+  -webkit-transform: translate3d(-100%, 0%, 0);
+  -moz-transform: translate3d(-100%, 0%, 0);
+  -ms-transform: translate3d(-100%, 0%, 0);
+  -o-transform: translate3d(-100%, 0%, 0);
+  transform: translate3d(-100%, 0%, 0);
+}
+.rv-container .slider-container .current {
+  -webkit-transform: translate3d(0%, 0%, 0);
+  -moz-transform: translate3d(0%, 0%, 0);
+  -ms-transform: translate3d(0%, 0%, 0);
+  -o-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+}
+.rv-container .slider-container .next {
+  -webkit-transform: translate3d(100%, 0%, 0);
+  -moz-transform: translate3d(100%, 0%, 0);
+  -ms-transform: translate3d(100%, 0%, 0);
+  -o-transform: translate3d(100%, 0%, 0);
+  transform: translate3d(100%, 0%, 0);
+}
