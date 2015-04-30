@@ -5,15 +5,18 @@
     <meta name='viewport' content='width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'>
 
     <!-- Used to style this page (not required)-->
-    <link rel="stylesheet" type="text/css" href="http://getskeleton.com/dist/css/skeleton.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="http://getskeleton.com/dist/css/skeleton.css"/> -->
 
     <style type="text/css">
       body {
         font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       #vignette-demo {
-        width: 500px;
-        height: 800px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
       }
     </style>
 
@@ -32,15 +35,7 @@
     <script src="../dist/react-vignette.js"></script>
   </head>
   <body>
-
-    <div class="container">
-      <div class="row">
-        <div class="column" style="margin-top: 100px;">
-          <h4>React-vignette</h4>
-          <div id="vignette-demo"></div>
-        </div>
-      </div>
-    </div>
+    <div id="vignette-demo"></div>
 
     <script>
         React.render(React.createElement(Vignette.Gallery, {

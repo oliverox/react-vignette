@@ -38,13 +38,12 @@
 .rv-container .slider-container {
   width: 100%;
   height: 100%;
-  background-color: antiquewhite;
+  background-color: #333;
 }
 .rv-container .slider-container .img-container {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow-y: hidden;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   -webkit-transition-duration: 0.5s;
