@@ -358,8 +358,8 @@ var Vignette =
 
 	'use strict';
 
-	var ReactLink = __webpack_require__(20);
-	var ReactStateSetters = __webpack_require__(21);
+	var ReactLink = __webpack_require__(21);
+	var ReactStateSetters = __webpack_require__(22);
 
 	/**
 	 * A simple mixin around ReactLink.forState().
@@ -404,27 +404,27 @@ var Vignette =
 
 	'use strict';
 
-	var EventPluginUtils = __webpack_require__(22);
-	var ReactChildren = __webpack_require__(23);
-	var ReactComponent = __webpack_require__(24);
-	var ReactClass = __webpack_require__(25);
-	var ReactContext = __webpack_require__(26);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactElement = __webpack_require__(28);
-	var ReactElementValidator = __webpack_require__(29);
-	var ReactDOM = __webpack_require__(30);
-	var ReactDOMTextComponent = __webpack_require__(31);
-	var ReactDefaultInjection = __webpack_require__(32);
-	var ReactInstanceHandles = __webpack_require__(33);
-	var ReactMount = __webpack_require__(34);
-	var ReactPerf = __webpack_require__(35);
-	var ReactPropTypes = __webpack_require__(36);
-	var ReactReconciler = __webpack_require__(37);
-	var ReactServerRendering = __webpack_require__(38);
+	var EventPluginUtils = __webpack_require__(23);
+	var ReactChildren = __webpack_require__(24);
+	var ReactComponent = __webpack_require__(25);
+	var ReactClass = __webpack_require__(26);
+	var ReactContext = __webpack_require__(27);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
+	var ReactElementValidator = __webpack_require__(30);
+	var ReactDOM = __webpack_require__(31);
+	var ReactDOMTextComponent = __webpack_require__(32);
+	var ReactDefaultInjection = __webpack_require__(33);
+	var ReactInstanceHandles = __webpack_require__(34);
+	var ReactMount = __webpack_require__(35);
+	var ReactPerf = __webpack_require__(36);
+	var ReactPropTypes = __webpack_require__(37);
+	var ReactReconciler = __webpack_require__(38);
+	var ReactServerRendering = __webpack_require__(39);
 
-	var assign = __webpack_require__(39);
-	var findDOMNode = __webpack_require__(40);
-	var onlyChild = __webpack_require__(41);
+	var assign = __webpack_require__(40);
+	var findDOMNode = __webpack_require__(41);
+	var onlyChild = __webpack_require__(42);
 
 	ReactDefaultInjection.inject();
 
@@ -490,7 +490,7 @@ var Vignette =
 	}
 
 	if ("production" !== process.env.NODE_ENV) {
-	  var ExecutionEnvironment = __webpack_require__(42);
+	  var ExecutionEnvironment = __webpack_require__(43);
 	  if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 
 	    // If we're in Chrome, look for the devtools marker and provide a download
@@ -557,7 +557,7 @@ var Vignette =
 
 	'use strict';
 
-	var shallowEqual = __webpack_require__(43);
+	var shallowEqual = __webpack_require__(20);
 
 	/**
 	 * If your React component's render function is "pure", e.g. it will render the
@@ -613,7 +613,7 @@ var Vignette =
 
 	var React = __webpack_require__(8);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 
 	var ReactTransitionGroup = React.createFactory(
 	  __webpack_require__(12)
@@ -684,9 +684,9 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	/**
 	 * We used to allow keyed objects to serve as a collection of ReactElements,
@@ -873,11 +873,11 @@ var Vignette =
 	'use strict';
 
 	var React = __webpack_require__(8);
-	var ReactTransitionChildMapping = __webpack_require__(46);
+	var ReactTransitionChildMapping = __webpack_require__(45);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var cloneWithProps = __webpack_require__(15);
-	var emptyFunction = __webpack_require__(47);
+	var emptyFunction = __webpack_require__(46);
 
 	var ReactTransitionGroup = React.createClass({
 	  displayName: 'ReactTransitionGroup',
@@ -1108,14 +1108,14 @@ var Vignette =
 
 	var CallbackQueue = __webpack_require__(48);
 	var PooledClass = __webpack_require__(49);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactPerf = __webpack_require__(35);
-	var ReactReconciler = __webpack_require__(37);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactPerf = __webpack_require__(36);
+	var ReactReconciler = __webpack_require__(38);
 	var Transaction = __webpack_require__(50);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var dirtyComponents = [];
 	var asapCallbackQueue = CallbackQueue.getPooled();
@@ -1406,7 +1406,7 @@ var Vignette =
 	 */
 
 	'use strict';
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var warned = false;
 
@@ -1451,11 +1451,11 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
-	var ReactPropTransferer = __webpack_require__(52);
+	var ReactElement = __webpack_require__(29);
+	var ReactPropTransferer = __webpack_require__(53);
 
-	var keyOf = __webpack_require__(53);
-	var warning = __webpack_require__(45);
+	var keyOf = __webpack_require__(52);
+	var warning = __webpack_require__(47);
 
 	var CHILDREN_PROP = keyOf({children: null});
 
@@ -1514,8 +1514,8 @@ var Vignette =
 
 	'use strict';
 
-	var assign = __webpack_require__(39);
-	var keyOf = __webpack_require__(53);
+	var assign = __webpack_require__(40);
+	var keyOf = __webpack_require__(52);
 	var invariant = __webpack_require__(51);
 	var hasOwnProperty = {}.hasOwnProperty;
 
@@ -1689,8 +1689,8 @@ var Vignette =
 
 	var DOMProperty = __webpack_require__(54);
 	var ReactDefaultPerfAnalysis = __webpack_require__(55);
-	var ReactMount = __webpack_require__(34);
-	var ReactPerf = __webpack_require__(35);
+	var ReactMount = __webpack_require__(35);
+	var ReactPerf = __webpack_require__(36);
 
 	var performanceNow = __webpack_require__(56);
 
@@ -1960,17 +1960,17 @@ var Vignette =
 	var EventPluginHub = __webpack_require__(58);
 	var EventPropagators = __webpack_require__(59);
 	var React = __webpack_require__(8);
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 	var ReactEmptyComponent = __webpack_require__(60);
 	var ReactBrowserEventEmitter = __webpack_require__(61);
 	var ReactCompositeComponent = __webpack_require__(62);
-	var ReactInstanceHandles = __webpack_require__(33);
+	var ReactInstanceHandles = __webpack_require__(34);
 	var ReactInstanceMap = __webpack_require__(63);
-	var ReactMount = __webpack_require__(34);
+	var ReactMount = __webpack_require__(35);
 	var ReactUpdates = __webpack_require__(13);
 	var SyntheticEvent = __webpack_require__(64);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -2529,6 +2529,54 @@ var Vignette =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * @providesModule shallowEqual
+	 */
+
+	'use strict';
+
+	/**
+	 * Performs equality by iterating through keys on an object and returning
+	 * false when any key has values which are not strictly equal between
+	 * objA and objB. Returns true when the values of all keys are strictly equal.
+	 *
+	 * @return {boolean}
+	 */
+	function shallowEqual(objA, objB) {
+	  if (objA === objB) {
+	    return true;
+	  }
+	  var key;
+	  // Test for A's keys different from B.
+	  for (key in objA) {
+	    if (objA.hasOwnProperty(key) &&
+	        (!objB.hasOwnProperty(key) || objA[key] !== objB[key])) {
+	      return false;
+	    }
+	  }
+	  // Test for B's keys missing from A.
+	  for (key in objB) {
+	    if (objB.hasOwnProperty(key) && !objA.hasOwnProperty(key)) {
+	      return false;
+	    }
+	  }
+	  return true;
+	}
+
+	module.exports = shallowEqual;
+
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
 	 * @providesModule ReactLink
 	 * @typechecks static-only
 	 */
@@ -2595,7 +2643,7 @@ var Vignette =
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -2705,7 +2753,7 @@ var Vignette =
 
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -2929,7 +2977,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -2949,7 +2997,7 @@ var Vignette =
 	var ReactFragment = __webpack_require__(11);
 
 	var traverseAllChildren = __webpack_require__(65);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
 	var threeArgumentPooler = PooledClass.threeArgumentPooler;
@@ -3085,7 +3133,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3101,10 +3149,10 @@ var Vignette =
 
 	'use strict';
 
-	var ReactUpdateQueue = __webpack_require__(66);
+	var ReactUpdateQueue = __webpack_require__(70);
 
 	var invariant = __webpack_require__(51);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	/**
 	 * Base class helpers for the updating state of a component.
@@ -3224,7 +3272,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3240,21 +3288,21 @@ var Vignette =
 
 	'use strict';
 
-	var ReactComponent = __webpack_require__(24);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactElement = __webpack_require__(28);
-	var ReactErrorUtils = __webpack_require__(67);
+	var ReactComponent = __webpack_require__(25);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
+	var ReactErrorUtils = __webpack_require__(66);
 	var ReactInstanceMap = __webpack_require__(63);
-	var ReactLifeCycle = __webpack_require__(68);
-	var ReactPropTypeLocations = __webpack_require__(69);
-	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactUpdateQueue = __webpack_require__(66);
+	var ReactLifeCycle = __webpack_require__(67);
+	var ReactPropTypeLocations = __webpack_require__(68);
+	var ReactPropTypeLocationNames = __webpack_require__(69);
+	var ReactUpdateQueue = __webpack_require__(70);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
 	var keyMirror = __webpack_require__(71);
-	var keyOf = __webpack_require__(53);
-	var warning = __webpack_require__(45);
+	var keyOf = __webpack_require__(52);
+	var warning = __webpack_require__(47);
 
 	var MIXINS_KEY = keyOf({mixins: null});
 
@@ -4173,7 +4221,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -4189,9 +4237,9 @@ var Vignette =
 
 	'use strict';
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var emptyObject = __webpack_require__(72);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var didWarn = false;
 
@@ -4254,7 +4302,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4292,7 +4340,7 @@ var Vignette =
 
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -4308,11 +4356,11 @@ var Vignette =
 
 	'use strict';
 
-	var ReactContext = __webpack_require__(26);
-	var ReactCurrentOwner = __webpack_require__(27);
+	var ReactContext = __webpack_require__(27);
+	var ReactCurrentOwner = __webpack_require__(28);
 
-	var assign = __webpack_require__(39);
-	var warning = __webpack_require__(45);
+	var assign = __webpack_require__(40);
+	var warning = __webpack_require__(47);
 
 	var RESERVED_PROPS = {
 	  key: true,
@@ -4603,7 +4651,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -4626,16 +4674,16 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 	var ReactFragment = __webpack_require__(11);
-	var ReactPropTypeLocations = __webpack_require__(69);
-	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactNativeComponent = __webpack_require__(73);
+	var ReactPropTypeLocations = __webpack_require__(68);
+	var ReactPropTypeLocationNames = __webpack_require__(69);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactNativeComponent = __webpack_require__(77);
 
-	var getIteratorFn = __webpack_require__(74);
+	var getIteratorFn = __webpack_require__(78);
 	var invariant = __webpack_require__(51);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	function getDeclarationErrorAddendum() {
 	  if (ReactCurrentOwner.current) {
@@ -5071,7 +5119,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -5088,10 +5136,10 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
-	var ReactElementValidator = __webpack_require__(29);
+	var ReactElement = __webpack_require__(29);
+	var ReactElementValidator = __webpack_require__(30);
 
-	var mapObject = __webpack_require__(75);
+	var mapObject = __webpack_require__(79);
 
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -5252,7 +5300,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5269,13 +5317,13 @@ var Vignette =
 
 	'use strict';
 
-	var DOMPropertyOperations = __webpack_require__(76);
+	var DOMPropertyOperations = __webpack_require__(73);
 	var ReactComponentBrowserEnvironment =
-	  __webpack_require__(77);
-	var ReactDOMComponent = __webpack_require__(78);
+	  __webpack_require__(74);
+	var ReactDOMComponent = __webpack_require__(75);
 
-	var assign = __webpack_require__(39);
-	var escapeTextContentForBrowser = __webpack_require__(79);
+	var assign = __webpack_require__(40);
+	var escapeTextContentForBrowser = __webpack_require__(76);
 
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -5373,7 +5421,7 @@ var Vignette =
 
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -5394,15 +5442,15 @@ var Vignette =
 	var ClientReactRootIndex = __webpack_require__(82);
 	var DefaultEventPluginOrder = __webpack_require__(83);
 	var EnterLeaveEventPlugin = __webpack_require__(84);
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 	var HTMLDOMPropertyConfig = __webpack_require__(85);
 	var MobileSafariClickEventPlugin = __webpack_require__(86);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
+	var ReactClass = __webpack_require__(26);
 	var ReactComponentBrowserEnvironment =
-	  __webpack_require__(77);
+	  __webpack_require__(74);
 	var ReactDefaultBatchingStrategy = __webpack_require__(88);
-	var ReactDOMComponent = __webpack_require__(78);
+	var ReactDOMComponent = __webpack_require__(75);
 	var ReactDOMButton = __webpack_require__(89);
 	var ReactDOMForm = __webpack_require__(90);
 	var ReactDOMImg = __webpack_require__(91);
@@ -5412,12 +5460,12 @@ var Vignette =
 	var ReactDOMOption = __webpack_require__(95);
 	var ReactDOMSelect = __webpack_require__(96);
 	var ReactDOMTextarea = __webpack_require__(97);
-	var ReactDOMTextComponent = __webpack_require__(31);
-	var ReactElement = __webpack_require__(28);
+	var ReactDOMTextComponent = __webpack_require__(32);
+	var ReactElement = __webpack_require__(29);
 	var ReactEventListener = __webpack_require__(98);
 	var ReactInjection = __webpack_require__(99);
-	var ReactInstanceHandles = __webpack_require__(33);
-	var ReactMount = __webpack_require__(34);
+	var ReactInstanceHandles = __webpack_require__(34);
+	var ReactMount = __webpack_require__(35);
 	var ReactReconcileTransaction = __webpack_require__(100);
 	var SelectEventPlugin = __webpack_require__(101);
 	var ServerReactRootIndex = __webpack_require__(102);
@@ -5535,7 +5583,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -5552,7 +5600,7 @@ var Vignette =
 
 	'use strict';
 
-	var ReactRootIndex = __webpack_require__(106);
+	var ReactRootIndex = __webpack_require__(112);
 
 	var invariant = __webpack_require__(51);
 
@@ -5874,7 +5922,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -5892,26 +5940,26 @@ var Vignette =
 
 	var DOMProperty = __webpack_require__(54);
 	var ReactBrowserEventEmitter = __webpack_require__(61);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactElement = __webpack_require__(28);
-	var ReactElementValidator = __webpack_require__(29);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
+	var ReactElementValidator = __webpack_require__(30);
 	var ReactEmptyComponent = __webpack_require__(60);
-	var ReactInstanceHandles = __webpack_require__(33);
+	var ReactInstanceHandles = __webpack_require__(34);
 	var ReactInstanceMap = __webpack_require__(63);
-	var ReactMarkupChecksum = __webpack_require__(107);
-	var ReactPerf = __webpack_require__(35);
-	var ReactReconciler = __webpack_require__(37);
-	var ReactUpdateQueue = __webpack_require__(66);
+	var ReactMarkupChecksum = __webpack_require__(106);
+	var ReactPerf = __webpack_require__(36);
+	var ReactReconciler = __webpack_require__(38);
+	var ReactUpdateQueue = __webpack_require__(70);
 	var ReactUpdates = __webpack_require__(13);
 
 	var emptyObject = __webpack_require__(72);
-	var containsNode = __webpack_require__(108);
-	var getReactRootElementInContainer = __webpack_require__(109);
-	var instantiateReactComponent = __webpack_require__(110);
+	var containsNode = __webpack_require__(107);
+	var getReactRootElementInContainer = __webpack_require__(108);
+	var instantiateReactComponent = __webpack_require__(109);
 	var invariant = __webpack_require__(51);
-	var setInnerHTML = __webpack_require__(111);
-	var shouldUpdateReactComponent = __webpack_require__(112);
-	var warning = __webpack_require__(45);
+	var setInnerHTML = __webpack_require__(110);
+	var shouldUpdateReactComponent = __webpack_require__(111);
+	var warning = __webpack_require__(47);
 
 	var SEPARATOR = ReactInstanceHandles.SEPARATOR;
 
@@ -6768,7 +6816,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -6875,7 +6923,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6891,11 +6939,11 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 	var ReactFragment = __webpack_require__(11);
-	var ReactPropTypeLocationNames = __webpack_require__(70);
+	var ReactPropTypeLocationNames = __webpack_require__(69);
 
-	var emptyFunction = __webpack_require__(47);
+	var emptyFunction = __webpack_require__(46);
 
 	/**
 	 * Collection of methods that allow declaration and validation of props that are
@@ -7228,7 +7276,7 @@ var Vignette =
 
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -7244,8 +7292,8 @@ var Vignette =
 
 	'use strict';
 
-	var ReactRef = __webpack_require__(113);
-	var ReactElementValidator = __webpack_require__(29);
+	var ReactRef = __webpack_require__(114);
+	var ReactElementValidator = __webpack_require__(30);
 
 	/**
 	 * Helper to call ReactRef.attachRefs with this composite component, split out
@@ -7355,7 +7403,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -7371,14 +7419,14 @@ var Vignette =
 	 */
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
-	var ReactInstanceHandles = __webpack_require__(33);
-	var ReactMarkupChecksum = __webpack_require__(107);
+	var ReactElement = __webpack_require__(29);
+	var ReactInstanceHandles = __webpack_require__(34);
+	var ReactMarkupChecksum = __webpack_require__(106);
 	var ReactServerRenderingTransaction =
-	  __webpack_require__(114);
+	  __webpack_require__(113);
 
 	var emptyObject = __webpack_require__(72);
-	var instantiateReactComponent = __webpack_require__(110);
+	var instantiateReactComponent = __webpack_require__(109);
 	var invariant = __webpack_require__(51);
 
 	/**
@@ -7440,7 +7488,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7493,7 +7541,7 @@ var Vignette =
 
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -7510,13 +7558,13 @@ var Vignette =
 
 	'use strict';
 
-	var ReactCurrentOwner = __webpack_require__(27);
+	var ReactCurrentOwner = __webpack_require__(28);
 	var ReactInstanceMap = __webpack_require__(63);
-	var ReactMount = __webpack_require__(34);
+	var ReactMount = __webpack_require__(35);
 
 	var invariant = __webpack_require__(51);
 	var isNode = __webpack_require__(115);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	/**
 	 * Returns the DOM node rendered by this element.
@@ -7569,7 +7617,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -7584,7 +7632,7 @@ var Vignette =
 	 */
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 
 	var invariant = __webpack_require__(51);
 
@@ -7612,7 +7660,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7660,54 +7708,6 @@ var Vignette =
 
 
 /***/ },
-/* 43 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule shallowEqual
-	 */
-
-	'use strict';
-
-	/**
-	 * Performs equality by iterating through keys on an object and returning
-	 * false when any key has values which are not strictly equal between
-	 * objA and objB. Returns true when the values of all keys are strictly equal.
-	 *
-	 * @return {boolean}
-	 */
-	function shallowEqual(objA, objB) {
-	  if (objA === objB) {
-	    return true;
-	  }
-	  var key;
-	  // Test for A's keys different from B.
-	  for (key in objA) {
-	    if (objA.hasOwnProperty(key) &&
-	        (!objB.hasOwnProperty(key) || objA[key] !== objB[key])) {
-	      return false;
-	    }
-	  }
-	  // Test for B's keys missing from A.
-	  for (key in objB) {
-	    if (objB.hasOwnProperty(key) && !objA.hasOwnProperty(key)) {
-	      return false;
-	    }
-	  }
-	  return true;
-	}
-
-	module.exports = shallowEqual;
-
-
-/***/ },
 /* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -7730,8 +7730,8 @@ var Vignette =
 	var CSSCore = __webpack_require__(116);
 	var ReactTransitionEvents = __webpack_require__(117);
 
-	var onlyChild = __webpack_require__(41);
-	var warning = __webpack_require__(45);
+	var onlyChild = __webpack_require__(42);
+	var warning = __webpack_require__(47);
 
 	// We don't remove the element from the DOM until we receive an animationend or
 	// transitionend event. If the user screws up and forgets to add an animation
@@ -7862,72 +7862,6 @@ var Vignette =
 /* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule warning
-	 */
-
-	"use strict";
-
-	var emptyFunction = __webpack_require__(47);
-
-	/**
-	 * Similar to invariant but only logs a warning if the condition is not met.
-	 * This can be used to log issues in development environments in critical
-	 * paths. Removing the logging code for production environments will keep the
-	 * same logic and follow the same code paths.
-	 */
-
-	var warning = emptyFunction;
-
-	if ("production" !== process.env.NODE_ENV) {
-	  warning = function(condition, format ) {for (var args=[],$__0=2,$__1=arguments.length;$__0<$__1;$__0++) args.push(arguments[$__0]);
-	    if (format === undefined) {
-	      throw new Error(
-	        '`warning(condition, format, ...args)` requires a warning ' +
-	        'message argument'
-	      );
-	    }
-
-	    if (format.length < 10 || /^[s\W]*$/.test(format)) {
-	      throw new Error(
-	        'The warning format should be able to uniquely identify this ' +
-	        'warning. Please, use a more descriptive format than: ' + format
-	      );
-	    }
-
-	    if (format.indexOf('Failed Composite propType: ') === 0) {
-	      return; // Ignore CompositeComponent proptype check.
-	    }
-
-	    if (!condition) {
-	      var argIndex = 0;
-	      var message = 'Warning: ' + format.replace(/%s/g, function()  {return args[argIndex++];});
-	      console.warn(message);
-	      try {
-	        // --- Welcome to debugging React ---
-	        // This error was thrown as a convenience so that you can use this stack
-	        // to find the callsite that caused this warning to fire.
-	        throw new Error(message);
-	      } catch(x) {}
-	    }
-	  };
-	}
-
-	module.exports = warning;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
-
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
-
 	/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
@@ -7942,7 +7876,7 @@ var Vignette =
 
 	'use strict';
 
-	var ReactChildren = __webpack_require__(23);
+	var ReactChildren = __webpack_require__(24);
 	var ReactFragment = __webpack_require__(11);
 
 	var ReactTransitionChildMapping = {
@@ -8034,7 +7968,7 @@ var Vignette =
 
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8072,6 +8006,72 @@ var Vignette =
 
 
 /***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule warning
+	 */
+
+	"use strict";
+
+	var emptyFunction = __webpack_require__(46);
+
+	/**
+	 * Similar to invariant but only logs a warning if the condition is not met.
+	 * This can be used to log issues in development environments in critical
+	 * paths. Removing the logging code for production environments will keep the
+	 * same logic and follow the same code paths.
+	 */
+
+	var warning = emptyFunction;
+
+	if ("production" !== process.env.NODE_ENV) {
+	  warning = function(condition, format ) {for (var args=[],$__0=2,$__1=arguments.length;$__0<$__1;$__0++) args.push(arguments[$__0]);
+	    if (format === undefined) {
+	      throw new Error(
+	        '`warning(condition, format, ...args)` requires a warning ' +
+	        'message argument'
+	      );
+	    }
+
+	    if (format.length < 10 || /^[s\W]*$/.test(format)) {
+	      throw new Error(
+	        'The warning format should be able to uniquely identify this ' +
+	        'warning. Please, use a more descriptive format than: ' + format
+	      );
+	    }
+
+	    if (format.indexOf('Failed Composite propType: ') === 0) {
+	      return; // Ignore CompositeComponent proptype check.
+	    }
+
+	    if (!condition) {
+	      var argIndex = 0;
+	      var message = 'Warning: ' + format.replace(/%s/g, function()  {return args[argIndex++];});
+	      console.warn(message);
+	      try {
+	        // --- Welcome to debugging React ---
+	        // This error was thrown as a convenience so that you can use this stack
+	        // to find the callsite that caused this warning to fire.
+	        throw new Error(message);
+	      } catch(x) {}
+	    }
+	  };
+	}
+
+	module.exports = warning;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
+
+/***/ },
 /* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -8090,7 +8090,7 @@ var Vignette =
 
 	var PooledClass = __webpack_require__(49);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
 
 	/**
@@ -8609,13 +8609,53 @@ var Vignette =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * @providesModule keyOf
+	 */
+
+	/**
+	 * Allows extraction of a minified key. Let's the build system minify keys
+	 * without loosing the ability to dynamically use key strings as values
+	 * themselves. Pass in an object with a single key/val pair and it will return
+	 * you the string key of that single record. Suppose you want to grab the
+	 * value for a key 'className' inside of an object. Key/val minification may
+	 * have aliased that key to be 'xa12'. keyOf({className: null}) will return
+	 * 'xa12' in that case. Resolve keys you want to use once at startup time, then
+	 * reuse those resolutions.
+	 */
+	var keyOf = function(oneKeyObj) {
+	  var key;
+	  for (key in oneKeyObj) {
+	    if (!oneKeyObj.hasOwnProperty(key)) {
+	      continue;
+	    }
+	    return key;
+	  }
+	  return null;
+	};
+
+
+	module.exports = keyOf;
+
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
 	 * @providesModule ReactPropTransferer
 	 */
 
 	'use strict';
 
-	var assign = __webpack_require__(39);
-	var emptyFunction = __webpack_require__(47);
+	var assign = __webpack_require__(40);
+	var emptyFunction = __webpack_require__(46);
 	var joinClasses = __webpack_require__(118);
 
 	/**
@@ -8709,46 +8749,6 @@ var Vignette =
 	};
 
 	module.exports = ReactPropTransferer;
-
-
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule keyOf
-	 */
-
-	/**
-	 * Allows extraction of a minified key. Let's the build system minify keys
-	 * without loosing the ability to dynamically use key strings as values
-	 * themselves. Pass in an object with a single key/val pair and it will return
-	 * you the string key of that single record. Suppose you want to grab the
-	 * value for a key 'className' inside of an object. Key/val minification may
-	 * have aliased that key to be 'xa12'. keyOf({className: null}) will return
-	 * 'xa12' in that case. Resolve keys you want to use once at startup time, then
-	 * reuse those resolutions.
-	 */
-	var keyOf = function(oneKeyObj) {
-	  var key;
-	  for (key in oneKeyObj) {
-	    if (!oneKeyObj.hasOwnProperty(key)) {
-	      continue;
-	    }
-	    return key;
-	  }
-	  return null;
-	};
-
-
-	module.exports = keyOf;
 
 
 /***/ },
@@ -9068,7 +9068,7 @@ var Vignette =
 	 * @providesModule ReactDefaultPerfAnalysis
 	 */
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 
 	// Don't try to save users less than 1.2ms (a number I made up)
 	var DONT_CARE_THRESHOLD = 1.2;
@@ -9389,7 +9389,7 @@ var Vignette =
 	'use strict';
 
 	var EventPluginRegistry = __webpack_require__(120);
-	var EventPluginUtils = __webpack_require__(22);
+	var EventPluginUtils = __webpack_require__(23);
 
 	var accumulateInto = __webpack_require__(121);
 	var forEachAccumulated = __webpack_require__(122);
@@ -9814,7 +9814,7 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 	var ReactInstanceMap = __webpack_require__(63);
 
 	var invariant = __webpack_require__(51);
@@ -9919,7 +9919,7 @@ var Vignette =
 	var ReactEventEmitterMixin = __webpack_require__(123);
 	var ViewportMetrics = __webpack_require__(124);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var isEventSupported = __webpack_require__(125);
 
 	/**
@@ -10269,25 +10269,25 @@ var Vignette =
 
 	'use strict';
 
-	var ReactComponentEnvironment = __webpack_require__(126);
-	var ReactContext = __webpack_require__(26);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactElement = __webpack_require__(28);
-	var ReactElementValidator = __webpack_require__(29);
+	var ReactComponentEnvironment = __webpack_require__(127);
+	var ReactContext = __webpack_require__(27);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
+	var ReactElementValidator = __webpack_require__(30);
 	var ReactInstanceMap = __webpack_require__(63);
-	var ReactLifeCycle = __webpack_require__(68);
-	var ReactNativeComponent = __webpack_require__(73);
-	var ReactPerf = __webpack_require__(35);
-	var ReactPropTypeLocations = __webpack_require__(69);
-	var ReactPropTypeLocationNames = __webpack_require__(70);
-	var ReactReconciler = __webpack_require__(37);
+	var ReactLifeCycle = __webpack_require__(67);
+	var ReactNativeComponent = __webpack_require__(77);
+	var ReactPerf = __webpack_require__(36);
+	var ReactPropTypeLocations = __webpack_require__(68);
+	var ReactPropTypeLocationNames = __webpack_require__(69);
+	var ReactReconciler = __webpack_require__(38);
 	var ReactUpdates = __webpack_require__(13);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var emptyObject = __webpack_require__(72);
 	var invariant = __webpack_require__(51);
-	var shouldUpdateReactComponent = __webpack_require__(112);
-	var warning = __webpack_require__(45);
+	var shouldUpdateReactComponent = __webpack_require__(111);
+	var warning = __webpack_require__(47);
 
 	function getDeclarationErrorAddendum(component) {
 	  var owner = component._currentElement._owner || null;
@@ -11226,9 +11226,9 @@ var Vignette =
 
 	var PooledClass = __webpack_require__(49);
 
-	var assign = __webpack_require__(39);
-	var emptyFunction = __webpack_require__(47);
-	var getEventTarget = __webpack_require__(127);
+	var assign = __webpack_require__(40);
+	var emptyFunction = __webpack_require__(46);
+	var getEventTarget = __webpack_require__(126);
 
 	/**
 	 * @interface Event
@@ -11393,13 +11393,13 @@ var Vignette =
 
 	'use strict';
 
-	var ReactElement = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 	var ReactFragment = __webpack_require__(11);
-	var ReactInstanceHandles = __webpack_require__(33);
+	var ReactInstanceHandles = __webpack_require__(34);
 
-	var getIteratorFn = __webpack_require__(74);
+	var getIteratorFn = __webpack_require__(78);
 	var invariant = __webpack_require__(51);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var SEPARATOR = ReactInstanceHandles.SEPARATOR;
 	var SUBSEPARATOR = ':';
@@ -11636,6 +11636,142 @@ var Vignette =
 /* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactErrorUtils
+	 * @typechecks
+	 */
+
+	"use strict";
+
+	var ReactErrorUtils = {
+	  /**
+	   * Creates a guarded version of a function. This is supposed to make debugging
+	   * of event handlers easier. To aid debugging with the browser's debugger,
+	   * this currently simply returns the original function.
+	   *
+	   * @param {function} func Function to be executed
+	   * @param {string} name The name of the guard
+	   * @return {function}
+	   */
+	  guard: function(func, name) {
+	    return func;
+	  }
+	};
+
+	module.exports = ReactErrorUtils;
+
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactLifeCycle
+	 */
+
+	'use strict';
+
+	/**
+	 * This module manages the bookkeeping when a component is in the process
+	 * of being mounted or being unmounted. This is used as a way to enforce
+	 * invariants (or warnings) when it is not recommended to call
+	 * setState/forceUpdate.
+	 *
+	 * currentlyMountingInstance: During the construction phase, it is not possible
+	 * to trigger an update since the instance is not fully mounted yet. However, we
+	 * currently allow this as a convenience for mutating the initial state.
+	 *
+	 * currentlyUnmountingInstance: During the unmounting phase, the instance is
+	 * still mounted and can therefore schedule an update. However, this is not
+	 * recommended and probably an error since it's about to be unmounted.
+	 * Therefore we still want to trigger in an error for that case.
+	 */
+
+	var ReactLifeCycle = {
+	  currentlyMountingInstance: null,
+	  currentlyUnmountingInstance: null
+	};
+
+	module.exports = ReactLifeCycle;
+
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactPropTypeLocations
+	 */
+
+	'use strict';
+
+	var keyMirror = __webpack_require__(71);
+
+	var ReactPropTypeLocations = keyMirror({
+	  prop: null,
+	  context: null,
+	  childContext: null
+	});
+
+	module.exports = ReactPropTypeLocations;
+
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactPropTypeLocationNames
+	 */
+
+	'use strict';
+
+	var ReactPropTypeLocationNames = {};
+
+	if ("production" !== process.env.NODE_ENV) {
+	  ReactPropTypeLocationNames = {
+	    prop: 'prop',
+	    context: 'context',
+	    childContext: 'child context'
+	  };
+	}
+
+	module.exports = ReactPropTypeLocationNames;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(process) {/**
 	 * Copyright 2015, Facebook, Inc.
 	 * All rights reserved.
@@ -11649,15 +11785,15 @@ var Vignette =
 
 	'use strict';
 
-	var ReactLifeCycle = __webpack_require__(68);
-	var ReactCurrentOwner = __webpack_require__(27);
-	var ReactElement = __webpack_require__(28);
+	var ReactLifeCycle = __webpack_require__(67);
+	var ReactCurrentOwner = __webpack_require__(28);
+	var ReactElement = __webpack_require__(29);
 	var ReactInstanceMap = __webpack_require__(63);
 	var ReactUpdates = __webpack_require__(13);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	function enqueueUpdate(internalInstance) {
 	  if (internalInstance !== ReactLifeCycle.currentlyMountingInstance) {
@@ -11935,142 +12071,6 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactErrorUtils
-	 * @typechecks
-	 */
-
-	"use strict";
-
-	var ReactErrorUtils = {
-	  /**
-	   * Creates a guarded version of a function. This is supposed to make debugging
-	   * of event handlers easier. To aid debugging with the browser's debugger,
-	   * this currently simply returns the original function.
-	   *
-	   * @param {function} func Function to be executed
-	   * @param {string} name The name of the guard
-	   * @return {function}
-	   */
-	  guard: function(func, name) {
-	    return func;
-	  }
-	};
-
-	module.exports = ReactErrorUtils;
-
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactLifeCycle
-	 */
-
-	'use strict';
-
-	/**
-	 * This module manages the bookkeeping when a component is in the process
-	 * of being mounted or being unmounted. This is used as a way to enforce
-	 * invariants (or warnings) when it is not recommended to call
-	 * setState/forceUpdate.
-	 *
-	 * currentlyMountingInstance: During the construction phase, it is not possible
-	 * to trigger an update since the instance is not fully mounted yet. However, we
-	 * currently allow this as a convenience for mutating the initial state.
-	 *
-	 * currentlyUnmountingInstance: During the unmounting phase, the instance is
-	 * still mounted and can therefore schedule an update. However, this is not
-	 * recommended and probably an error since it's about to be unmounted.
-	 * Therefore we still want to trigger in an error for that case.
-	 */
-
-	var ReactLifeCycle = {
-	  currentlyMountingInstance: null,
-	  currentlyUnmountingInstance: null
-	};
-
-	module.exports = ReactLifeCycle;
-
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactPropTypeLocations
-	 */
-
-	'use strict';
-
-	var keyMirror = __webpack_require__(71);
-
-	var ReactPropTypeLocations = keyMirror({
-	  prop: null,
-	  context: null,
-	  childContext: null
-	});
-
-	module.exports = ReactPropTypeLocations;
-
-
-/***/ },
-/* 70 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactPropTypeLocationNames
-	 */
-
-	'use strict';
-
-	var ReactPropTypeLocationNames = {};
-
-	if ("production" !== process.env.NODE_ENV) {
-	  ReactPropTypeLocationNames = {
-	    prop: 'prop',
-	    context: 'context',
-	    childContext: 'child context'
-	  };
-	}
-
-	module.exports = ReactPropTypeLocationNames;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
-
-/***/ },
 /* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -12160,221 +12160,6 @@ var Vignette =
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactNativeComponent
-	 */
-
-	'use strict';
-
-	var assign = __webpack_require__(39);
-	var invariant = __webpack_require__(51);
-
-	var autoGenerateWrapperClass = null;
-	var genericComponentClass = null;
-	// This registry keeps track of wrapper classes around native tags
-	var tagToComponentClass = {};
-	var textComponentClass = null;
-
-	var ReactNativeComponentInjection = {
-	  // This accepts a class that receives the tag string. This is a catch all
-	  // that can render any kind of tag.
-	  injectGenericComponentClass: function(componentClass) {
-	    genericComponentClass = componentClass;
-	  },
-	  // This accepts a text component class that takes the text string to be
-	  // rendered as props.
-	  injectTextComponentClass: function(componentClass) {
-	    textComponentClass = componentClass;
-	  },
-	  // This accepts a keyed object with classes as values. Each key represents a
-	  // tag. That particular tag will use this class instead of the generic one.
-	  injectComponentClasses: function(componentClasses) {
-	    assign(tagToComponentClass, componentClasses);
-	  },
-	  // Temporary hack since we expect DOM refs to behave like composites,
-	  // for this release.
-	  injectAutoWrapper: function(wrapperFactory) {
-	    autoGenerateWrapperClass = wrapperFactory;
-	  }
-	};
-
-	/**
-	 * Get a composite component wrapper class for a specific tag.
-	 *
-	 * @param {ReactElement} element The tag for which to get the class.
-	 * @return {function} The React class constructor function.
-	 */
-	function getComponentClassForElement(element) {
-	  if (typeof element.type === 'function') {
-	    return element.type;
-	  }
-	  var tag = element.type;
-	  var componentClass = tagToComponentClass[tag];
-	  if (componentClass == null) {
-	    tagToComponentClass[tag] = componentClass = autoGenerateWrapperClass(tag);
-	  }
-	  return componentClass;
-	}
-
-	/**
-	 * Get a native internal component class for a specific tag.
-	 *
-	 * @param {ReactElement} element The element to create.
-	 * @return {function} The internal class constructor function.
-	 */
-	function createInternalComponent(element) {
-	  ("production" !== process.env.NODE_ENV ? invariant(
-	    genericComponentClass,
-	    'There is no registered component for the tag %s',
-	    element.type
-	  ) : invariant(genericComponentClass));
-	  return new genericComponentClass(element.type, element.props);
-	}
-
-	/**
-	 * @param {ReactText} text
-	 * @return {ReactComponent}
-	 */
-	function createInstanceForText(text) {
-	  return new textComponentClass(text);
-	}
-
-	/**
-	 * @param {ReactComponent} component
-	 * @return {boolean}
-	 */
-	function isTextComponent(component) {
-	  return component instanceof textComponentClass;
-	}
-
-	var ReactNativeComponent = {
-	  getComponentClassForElement: getComponentClassForElement,
-	  createInternalComponent: createInternalComponent,
-	  createInstanceForText: createInstanceForText,
-	  isTextComponent: isTextComponent,
-	  injection: ReactNativeComponentInjection
-	};
-
-	module.exports = ReactNativeComponent;
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
-
-/***/ },
-/* 74 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getIteratorFn
-	 * @typechecks static-only
-	 */
-
-	'use strict';
-
-	/* global Symbol */
-	var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-	var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-	/**
-	 * Returns the iterator method function contained on the iterable object.
-	 *
-	 * Be sure to invoke the function with the iterable as context:
-	 *
-	 *     var iteratorFn = getIteratorFn(myIterable);
-	 *     if (iteratorFn) {
-	 *       var iterator = iteratorFn.call(myIterable);
-	 *       ...
-	 *     }
-	 *
-	 * @param {?object} maybeIterable
-	 * @return {?function}
-	 */
-	function getIteratorFn(maybeIterable) {
-	  var iteratorFn = maybeIterable && (
-	    (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL])
-	  );
-	  if (typeof iteratorFn === 'function') {
-	    return iteratorFn;
-	  }
-	}
-
-	module.exports = getIteratorFn;
-
-
-/***/ },
-/* 75 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule mapObject
-	 */
-
-	'use strict';
-
-	var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-	/**
-	 * Executes the provided `callback` once for each enumerable own property in the
-	 * object and constructs a new object from the results. The `callback` is
-	 * invoked with three arguments:
-	 *
-	 *  - the property value
-	 *  - the property name
-	 *  - the object being traversed
-	 *
-	 * Properties that are added after the call to `mapObject` will not be visited
-	 * by `callback`. If the values of existing properties are changed, the value
-	 * passed to `callback` will be the value at the time `mapObject` visits them.
-	 * Properties that are deleted before being visited are not visited.
-	 *
-	 * @grep function objectMap()
-	 * @grep function objMap()
-	 *
-	 * @param {?object} object
-	 * @param {function} callback
-	 * @param {*} context
-	 * @return {?object}
-	 */
-	function mapObject(object, callback, context) {
-	  if (!object) {
-	    return null;
-	  }
-	  var result = {};
-	  for (var name in object) {
-	    if (hasOwnProperty.call(object, name)) {
-	      result[name] = callback.call(context, object[name], name, object);
-	    }
-	  }
-	  return result;
-	}
-
-	module.exports = mapObject;
-
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -12391,7 +12176,7 @@ var Vignette =
 	var DOMProperty = __webpack_require__(54);
 
 	var quoteAttributeValueForBrowser = __webpack_require__(128);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	function shouldIgnoreValue(name, value) {
 	  return value == null ||
@@ -12566,7 +12351,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 77 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12585,7 +12370,7 @@ var Vignette =
 	'use strict';
 
 	var ReactDOMIDOperations = __webpack_require__(92);
-	var ReactMount = __webpack_require__(34);
+	var ReactMount = __webpack_require__(35);
 
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -12617,7 +12402,7 @@ var Vignette =
 
 
 /***/ },
-/* 78 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -12638,20 +12423,20 @@ var Vignette =
 
 	var CSSPropertyOperations = __webpack_require__(129);
 	var DOMProperty = __webpack_require__(54);
-	var DOMPropertyOperations = __webpack_require__(76);
+	var DOMPropertyOperations = __webpack_require__(73);
 	var ReactBrowserEventEmitter = __webpack_require__(61);
 	var ReactComponentBrowserEnvironment =
-	  __webpack_require__(77);
-	var ReactMount = __webpack_require__(34);
+	  __webpack_require__(74);
+	var ReactMount = __webpack_require__(35);
 	var ReactMultiChild = __webpack_require__(130);
-	var ReactPerf = __webpack_require__(35);
+	var ReactPerf = __webpack_require__(36);
 
-	var assign = __webpack_require__(39);
-	var escapeTextContentForBrowser = __webpack_require__(79);
+	var assign = __webpack_require__(40);
+	var escapeTextContentForBrowser = __webpack_require__(76);
 	var invariant = __webpack_require__(51);
 	var isEventSupported = __webpack_require__(125);
-	var keyOf = __webpack_require__(53);
-	var warning = __webpack_require__(45);
+	var keyOf = __webpack_require__(52);
+	var warning = __webpack_require__(47);
 
 	var deleteListener = ReactBrowserEventEmitter.deleteListener;
 	var listenTo = ReactBrowserEventEmitter.listenTo;
@@ -13128,7 +12913,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 79 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13172,6 +12957,221 @@ var Vignette =
 
 
 /***/ },
+/* 77 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactNativeComponent
+	 */
+
+	'use strict';
+
+	var assign = __webpack_require__(40);
+	var invariant = __webpack_require__(51);
+
+	var autoGenerateWrapperClass = null;
+	var genericComponentClass = null;
+	// This registry keeps track of wrapper classes around native tags
+	var tagToComponentClass = {};
+	var textComponentClass = null;
+
+	var ReactNativeComponentInjection = {
+	  // This accepts a class that receives the tag string. This is a catch all
+	  // that can render any kind of tag.
+	  injectGenericComponentClass: function(componentClass) {
+	    genericComponentClass = componentClass;
+	  },
+	  // This accepts a text component class that takes the text string to be
+	  // rendered as props.
+	  injectTextComponentClass: function(componentClass) {
+	    textComponentClass = componentClass;
+	  },
+	  // This accepts a keyed object with classes as values. Each key represents a
+	  // tag. That particular tag will use this class instead of the generic one.
+	  injectComponentClasses: function(componentClasses) {
+	    assign(tagToComponentClass, componentClasses);
+	  },
+	  // Temporary hack since we expect DOM refs to behave like composites,
+	  // for this release.
+	  injectAutoWrapper: function(wrapperFactory) {
+	    autoGenerateWrapperClass = wrapperFactory;
+	  }
+	};
+
+	/**
+	 * Get a composite component wrapper class for a specific tag.
+	 *
+	 * @param {ReactElement} element The tag for which to get the class.
+	 * @return {function} The React class constructor function.
+	 */
+	function getComponentClassForElement(element) {
+	  if (typeof element.type === 'function') {
+	    return element.type;
+	  }
+	  var tag = element.type;
+	  var componentClass = tagToComponentClass[tag];
+	  if (componentClass == null) {
+	    tagToComponentClass[tag] = componentClass = autoGenerateWrapperClass(tag);
+	  }
+	  return componentClass;
+	}
+
+	/**
+	 * Get a native internal component class for a specific tag.
+	 *
+	 * @param {ReactElement} element The element to create.
+	 * @return {function} The internal class constructor function.
+	 */
+	function createInternalComponent(element) {
+	  ("production" !== process.env.NODE_ENV ? invariant(
+	    genericComponentClass,
+	    'There is no registered component for the tag %s',
+	    element.type
+	  ) : invariant(genericComponentClass));
+	  return new genericComponentClass(element.type, element.props);
+	}
+
+	/**
+	 * @param {ReactText} text
+	 * @return {ReactComponent}
+	 */
+	function createInstanceForText(text) {
+	  return new textComponentClass(text);
+	}
+
+	/**
+	 * @param {ReactComponent} component
+	 * @return {boolean}
+	 */
+	function isTextComponent(component) {
+	  return component instanceof textComponentClass;
+	}
+
+	var ReactNativeComponent = {
+	  getComponentClassForElement: getComponentClassForElement,
+	  createInternalComponent: createInternalComponent,
+	  createInstanceForText: createInstanceForText,
+	  isTextComponent: isTextComponent,
+	  injection: ReactNativeComponentInjection
+	};
+
+	module.exports = ReactNativeComponent;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
+
+/***/ },
+/* 78 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getIteratorFn
+	 * @typechecks static-only
+	 */
+
+	'use strict';
+
+	/* global Symbol */
+	var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+	var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+	/**
+	 * Returns the iterator method function contained on the iterable object.
+	 *
+	 * Be sure to invoke the function with the iterable as context:
+	 *
+	 *     var iteratorFn = getIteratorFn(myIterable);
+	 *     if (iteratorFn) {
+	 *       var iterator = iteratorFn.call(myIterable);
+	 *       ...
+	 *     }
+	 *
+	 * @param {?object} maybeIterable
+	 * @return {?function}
+	 */
+	function getIteratorFn(maybeIterable) {
+	  var iteratorFn = maybeIterable && (
+	    (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL])
+	  );
+	  if (typeof iteratorFn === 'function') {
+	    return iteratorFn;
+	  }
+	}
+
+	module.exports = getIteratorFn;
+
+
+/***/ },
+/* 79 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule mapObject
+	 */
+
+	'use strict';
+
+	var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+	/**
+	 * Executes the provided `callback` once for each enumerable own property in the
+	 * object and constructs a new object from the results. The `callback` is
+	 * invoked with three arguments:
+	 *
+	 *  - the property value
+	 *  - the property name
+	 *  - the object being traversed
+	 *
+	 * Properties that are added after the call to `mapObject` will not be visited
+	 * by `callback`. If the values of existing properties are changed, the value
+	 * passed to `callback` will be the value at the time `mapObject` visits them.
+	 * Properties that are deleted before being visited are not visited.
+	 *
+	 * @grep function objectMap()
+	 * @grep function objMap()
+	 *
+	 * @param {?object} object
+	 * @param {function} callback
+	 * @param {*} context
+	 * @return {?object}
+	 */
+	function mapObject(object, callback, context) {
+	  if (!object) {
+	    return null;
+	  }
+	  var result = {};
+	  for (var name in object) {
+	    if (hasOwnProperty.call(object, name)) {
+	      result[name] = callback.call(context, object[name], name, object);
+	    }
+	  }
+	  return result;
+	}
+
+	module.exports = mapObject;
+
+
+/***/ },
 /* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -13191,12 +13191,12 @@ var Vignette =
 
 	var EventConstants = __webpack_require__(57);
 	var EventPropagators = __webpack_require__(59);
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 	var FallbackCompositionState = __webpack_require__(131);
 	var SyntheticCompositionEvent = __webpack_require__(132);
 	var SyntheticInputEvent = __webpack_require__(133);
 
-	var keyOf = __webpack_require__(53);
+	var keyOf = __webpack_require__(52);
 
 	var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 	var START_KEYCODE = 229;
@@ -13690,13 +13690,13 @@ var Vignette =
 	var EventConstants = __webpack_require__(57);
 	var EventPluginHub = __webpack_require__(58);
 	var EventPropagators = __webpack_require__(59);
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 	var ReactUpdates = __webpack_require__(13);
 	var SyntheticEvent = __webpack_require__(64);
 
 	var isEventSupported = __webpack_require__(125);
 	var isTextInputElement = __webpack_require__(134);
-	var keyOf = __webpack_require__(53);
+	var keyOf = __webpack_require__(52);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -14102,7 +14102,7 @@ var Vignette =
 
 	'use strict';
 
-	var keyOf = __webpack_require__(53);
+	var keyOf = __webpack_require__(52);
 
 	/**
 	 * Module that is injectable into `EventPluginHub`, that specifies a
@@ -14150,8 +14150,8 @@ var Vignette =
 	var EventPropagators = __webpack_require__(59);
 	var SyntheticMouseEvent = __webpack_require__(135);
 
-	var ReactMount = __webpack_require__(34);
-	var keyOf = __webpack_require__(53);
+	var ReactMount = __webpack_require__(35);
+	var keyOf = __webpack_require__(52);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 	var getFirstReactDOM = ReactMount.getFirstReactDOM;
@@ -14292,7 +14292,7 @@ var Vignette =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(54);
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 	var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
@@ -14507,7 +14507,7 @@ var Vignette =
 
 	var EventConstants = __webpack_require__(57);
 
-	var emptyFunction = __webpack_require__(47);
+	var emptyFunction = __webpack_require__(46);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -14566,7 +14566,7 @@ var Vignette =
 
 	'use strict';
 
-	var findDOMNode = __webpack_require__(40);
+	var findDOMNode = __webpack_require__(41);
 
 	var ReactBrowserComponentMixin = {
 	  /**
@@ -14604,8 +14604,8 @@ var Vignette =
 	var ReactUpdates = __webpack_require__(13);
 	var Transaction = __webpack_require__(50);
 
-	var assign = __webpack_require__(39);
-	var emptyFunction = __webpack_require__(47);
+	var assign = __webpack_require__(40);
+	var emptyFunction = __webpack_require__(46);
 
 	var RESET_BATCHED_UPDATES = {
 	  initialize: emptyFunction,
@@ -14680,8 +14680,8 @@ var Vignette =
 
 	var AutoFocusMixin = __webpack_require__(136);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 
 	var keyMirror = __webpack_require__(71);
 
@@ -14749,8 +14749,8 @@ var Vignette =
 	var EventConstants = __webpack_require__(57);
 	var LocalEventTrapMixin = __webpack_require__(137);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 
 	var form = ReactElement.createFactory('form');
 
@@ -14802,8 +14802,8 @@ var Vignette =
 	var EventConstants = __webpack_require__(57);
 	var LocalEventTrapMixin = __webpack_require__(137);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 
 	var img = ReactElement.createFactory('img');
 
@@ -14854,12 +14854,12 @@ var Vignette =
 
 	var CSSPropertyOperations = __webpack_require__(129);
 	var DOMChildrenOperations = __webpack_require__(138);
-	var DOMPropertyOperations = __webpack_require__(76);
-	var ReactMount = __webpack_require__(34);
-	var ReactPerf = __webpack_require__(35);
+	var DOMPropertyOperations = __webpack_require__(73);
+	var ReactMount = __webpack_require__(35);
+	var ReactPerf = __webpack_require__(36);
 
 	var invariant = __webpack_require__(51);
-	var setInnerHTML = __webpack_require__(111);
+	var setInnerHTML = __webpack_require__(110);
 
 	/**
 	 * Errors for properties that should not be updated with `updatePropertyById()`.
@@ -15023,8 +15023,8 @@ var Vignette =
 	var EventConstants = __webpack_require__(57);
 	var LocalEventTrapMixin = __webpack_require__(137);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 
 	var iframe = ReactElement.createFactory('iframe');
 
@@ -15070,15 +15070,15 @@ var Vignette =
 	'use strict';
 
 	var AutoFocusMixin = __webpack_require__(136);
-	var DOMPropertyOperations = __webpack_require__(76);
+	var DOMPropertyOperations = __webpack_require__(73);
 	var LinkedValueUtils = __webpack_require__(139);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
-	var ReactMount = __webpack_require__(34);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
+	var ReactMount = __webpack_require__(35);
 	var ReactUpdates = __webpack_require__(13);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
 
 	var input = ReactElement.createFactory('input');
@@ -15250,10 +15250,10 @@ var Vignette =
 	'use strict';
 
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var option = ReactElement.createFactory('option');
 
@@ -15307,11 +15307,11 @@ var Vignette =
 	var AutoFocusMixin = __webpack_require__(136);
 	var LinkedValueUtils = __webpack_require__(139);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 	var ReactUpdates = __webpack_require__(13);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 
 	var select = ReactElement.createFactory('select');
 
@@ -15487,17 +15487,17 @@ var Vignette =
 	'use strict';
 
 	var AutoFocusMixin = __webpack_require__(136);
-	var DOMPropertyOperations = __webpack_require__(76);
+	var DOMPropertyOperations = __webpack_require__(73);
 	var LinkedValueUtils = __webpack_require__(139);
 	var ReactBrowserComponentMixin = __webpack_require__(87);
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 	var ReactUpdates = __webpack_require__(13);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
 
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	var textarea = ReactElement.createFactory('textarea');
 
@@ -15631,14 +15631,14 @@ var Vignette =
 	'use strict';
 
 	var EventListener = __webpack_require__(140);
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 	var PooledClass = __webpack_require__(49);
-	var ReactInstanceHandles = __webpack_require__(33);
-	var ReactMount = __webpack_require__(34);
+	var ReactInstanceHandles = __webpack_require__(34);
+	var ReactMount = __webpack_require__(35);
 	var ReactUpdates = __webpack_require__(13);
 
-	var assign = __webpack_require__(39);
-	var getEventTarget = __webpack_require__(127);
+	var assign = __webpack_require__(40);
+	var getEventTarget = __webpack_require__(126);
 	var getUnboundedScrollPosition = __webpack_require__(141);
 
 	/**
@@ -15818,14 +15818,14 @@ var Vignette =
 
 	var DOMProperty = __webpack_require__(54);
 	var EventPluginHub = __webpack_require__(58);
-	var ReactComponentEnvironment = __webpack_require__(126);
-	var ReactClass = __webpack_require__(25);
+	var ReactComponentEnvironment = __webpack_require__(127);
+	var ReactClass = __webpack_require__(26);
 	var ReactEmptyComponent = __webpack_require__(60);
 	var ReactBrowserEventEmitter = __webpack_require__(61);
-	var ReactNativeComponent = __webpack_require__(73);
-	var ReactDOMComponent = __webpack_require__(78);
-	var ReactPerf = __webpack_require__(35);
-	var ReactRootIndex = __webpack_require__(106);
+	var ReactNativeComponent = __webpack_require__(77);
+	var ReactDOMComponent = __webpack_require__(75);
+	var ReactPerf = __webpack_require__(36);
+	var ReactRootIndex = __webpack_require__(112);
 	var ReactUpdates = __webpack_require__(13);
 
 	var ReactInjection = {
@@ -15870,7 +15870,7 @@ var Vignette =
 	var ReactPutListenerQueue = __webpack_require__(143);
 	var Transaction = __webpack_require__(50);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -16047,10 +16047,10 @@ var Vignette =
 	var ReactInputSelection = __webpack_require__(142);
 	var SyntheticEvent = __webpack_require__(64);
 
-	var getActiveElement = __webpack_require__(144);
+	var getActiveElement = __webpack_require__(152);
 	var isTextInputElement = __webpack_require__(134);
-	var keyOf = __webpack_require__(53);
-	var shallowEqual = __webpack_require__(43);
+	var keyOf = __webpack_require__(52);
+	var shallowEqual = __webpack_require__(20);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -16277,23 +16277,23 @@ var Vignette =
 	'use strict';
 
 	var EventConstants = __webpack_require__(57);
-	var EventPluginUtils = __webpack_require__(22);
+	var EventPluginUtils = __webpack_require__(23);
 	var EventPropagators = __webpack_require__(59);
-	var SyntheticClipboardEvent = __webpack_require__(145);
+	var SyntheticClipboardEvent = __webpack_require__(144);
 	var SyntheticEvent = __webpack_require__(64);
-	var SyntheticFocusEvent = __webpack_require__(146);
-	var SyntheticKeyboardEvent = __webpack_require__(147);
+	var SyntheticFocusEvent = __webpack_require__(145);
+	var SyntheticKeyboardEvent = __webpack_require__(146);
 	var SyntheticMouseEvent = __webpack_require__(135);
-	var SyntheticDragEvent = __webpack_require__(148);
-	var SyntheticTouchEvent = __webpack_require__(149);
-	var SyntheticUIEvent = __webpack_require__(150);
-	var SyntheticWheelEvent = __webpack_require__(151);
+	var SyntheticDragEvent = __webpack_require__(147);
+	var SyntheticTouchEvent = __webpack_require__(148);
+	var SyntheticUIEvent = __webpack_require__(149);
+	var SyntheticWheelEvent = __webpack_require__(150);
 
-	var getEventCharCode = __webpack_require__(152);
+	var getEventCharCode = __webpack_require__(151);
 
 	var invariant = __webpack_require__(51);
-	var keyOf = __webpack_require__(53);
-	var warning = __webpack_require__(45);
+	var keyOf = __webpack_require__(52);
+	var warning = __webpack_require__(47);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -16805,8 +16805,8 @@ var Vignette =
 	'use strict';
 
 	// Defeat circular references by requiring this directly.
-	var ReactClass = __webpack_require__(25);
-	var ReactElement = __webpack_require__(28);
+	var ReactClass = __webpack_require__(26);
+	var ReactElement = __webpack_require__(29);
 
 	var invariant = __webpack_require__(51);
 
@@ -16863,41 +16863,6 @@ var Vignette =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * @providesModule ReactRootIndex
-	 * @typechecks
-	 */
-
-	'use strict';
-
-	var ReactRootIndexInjection = {
-	  /**
-	   * @param {function} _createReactRootIndex
-	   */
-	  injectCreateReactRootIndex: function(_createReactRootIndex) {
-	    ReactRootIndex.createReactRootIndex = _createReactRootIndex;
-	  }
-	};
-
-	var ReactRootIndex = {
-	  createReactRootIndex: null,
-	  injection: ReactRootIndexInjection
-	};
-
-	module.exports = ReactRootIndex;
-
-
-/***/ },
-/* 107 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
 	 * @providesModule ReactMarkupChecksum
 	 */
 
@@ -16939,7 +16904,7 @@ var Vignette =
 
 
 /***/ },
-/* 108 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16987,7 +16952,7 @@ var Vignette =
 
 
 /***/ },
-/* 109 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17026,7 +16991,7 @@ var Vignette =
 
 
 /***/ },
-/* 110 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -17045,11 +17010,11 @@ var Vignette =
 
 	var ReactCompositeComponent = __webpack_require__(62);
 	var ReactEmptyComponent = __webpack_require__(60);
-	var ReactNativeComponent = __webpack_require__(73);
+	var ReactNativeComponent = __webpack_require__(77);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 	var invariant = __webpack_require__(51);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	// To avoid a cyclic dependency, we create the final class in this module
 	var ReactCompositeComponentWrapper = function() { };
@@ -17167,7 +17132,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 111 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17185,7 +17150,7 @@ var Vignette =
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 	var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
@@ -17260,7 +17225,7 @@ var Vignette =
 
 
 /***/ },
-/* 112 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -17277,7 +17242,7 @@ var Vignette =
 
 	'use strict';
 
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	/**
 	 * Given a `prevElement` and `nextElement`, determines if the existing
@@ -17367,7 +17332,7 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 113 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17378,71 +17343,31 @@ var Vignette =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * @providesModule ReactRef
+	 * @providesModule ReactRootIndex
+	 * @typechecks
 	 */
 
 	'use strict';
 
-	var ReactOwner = __webpack_require__(155);
-
-	var ReactRef = {};
-
-	function attachRef(ref, component, owner) {
-	  if (typeof ref === 'function') {
-	    ref(component.getPublicInstance());
-	  } else {
-	    // Legacy ref
-	    ReactOwner.addComponentAsRefTo(component, ref, owner);
-	  }
-	}
-
-	function detachRef(ref, component, owner) {
-	  if (typeof ref === 'function') {
-	    ref(null);
-	  } else {
-	    // Legacy ref
-	    ReactOwner.removeComponentAsRefFrom(component, ref, owner);
-	  }
-	}
-
-	ReactRef.attachRefs = function(instance, element) {
-	  var ref = element.ref;
-	  if (ref != null) {
-	    attachRef(ref, instance, element._owner);
+	var ReactRootIndexInjection = {
+	  /**
+	   * @param {function} _createReactRootIndex
+	   */
+	  injectCreateReactRootIndex: function(_createReactRootIndex) {
+	    ReactRootIndex.createReactRootIndex = _createReactRootIndex;
 	  }
 	};
 
-	ReactRef.shouldUpdateRefs = function(prevElement, nextElement) {
-	  // If either the owner or a `ref` has changed, make sure the newest owner
-	  // has stored a reference to `this`, and the previous owner (if different)
-	  // has forgotten the reference to `this`. We use the element instead
-	  // of the public this.props because the post processing cannot determine
-	  // a ref. The ref conceptually lives on the element.
-
-	  // TODO: Should this even be possible? The owner cannot change because
-	  // it's forbidden by shouldUpdateReactComponent. The ref can change
-	  // if you swap the keys of but not the refs. Reconsider where this check
-	  // is made. It probably belongs where the key checking and
-	  // instantiateReactComponent is done.
-
-	  return (
-	    nextElement._owner !== prevElement._owner ||
-	    nextElement.ref !== prevElement.ref
-	  );
+	var ReactRootIndex = {
+	  createReactRootIndex: null,
+	  injection: ReactRootIndexInjection
 	};
 
-	ReactRef.detachRefs = function(instance, element) {
-	  var ref = element.ref;
-	  if (ref != null) {
-	    detachRef(ref, instance, element._owner);
-	  }
-	};
-
-	module.exports = ReactRef;
+	module.exports = ReactRootIndex;
 
 
 /***/ },
-/* 114 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17464,8 +17389,8 @@ var Vignette =
 	var ReactPutListenerQueue = __webpack_require__(143);
 	var Transaction = __webpack_require__(50);
 
-	var assign = __webpack_require__(39);
-	var emptyFunction = __webpack_require__(47);
+	var assign = __webpack_require__(40);
+	var emptyFunction = __webpack_require__(46);
 
 	/**
 	 * Provides a `CallbackQueue` queue for collecting `onDOMReady` callbacks
@@ -17556,6 +17481,81 @@ var Vignette =
 	PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 	module.exports = ReactServerRenderingTransaction;
+
+
+/***/ },
+/* 114 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactRef
+	 */
+
+	'use strict';
+
+	var ReactOwner = __webpack_require__(155);
+
+	var ReactRef = {};
+
+	function attachRef(ref, component, owner) {
+	  if (typeof ref === 'function') {
+	    ref(component.getPublicInstance());
+	  } else {
+	    // Legacy ref
+	    ReactOwner.addComponentAsRefTo(component, ref, owner);
+	  }
+	}
+
+	function detachRef(ref, component, owner) {
+	  if (typeof ref === 'function') {
+	    ref(null);
+	  } else {
+	    // Legacy ref
+	    ReactOwner.removeComponentAsRefFrom(component, ref, owner);
+	  }
+	}
+
+	ReactRef.attachRefs = function(instance, element) {
+	  var ref = element.ref;
+	  if (ref != null) {
+	    attachRef(ref, instance, element._owner);
+	  }
+	};
+
+	ReactRef.shouldUpdateRefs = function(prevElement, nextElement) {
+	  // If either the owner or a `ref` has changed, make sure the newest owner
+	  // has stored a reference to `this`, and the previous owner (if different)
+	  // has forgotten the reference to `this`. We use the element instead
+	  // of the public this.props because the post processing cannot determine
+	  // a ref. The ref conceptually lives on the element.
+
+	  // TODO: Should this even be possible? The owner cannot change because
+	  // it's forbidden by shouldUpdateReactComponent. The ref can change
+	  // if you swap the keys of but not the refs. Reconsider where this check
+	  // is made. It probably belongs where the key checking and
+	  // instantiateReactComponent is done.
+
+	  return (
+	    nextElement._owner !== prevElement._owner ||
+	    nextElement.ref !== prevElement.ref
+	  );
+	};
+
+	ReactRef.detachRefs = function(instance, element) {
+	  var ref = element.ref;
+	  if (ref != null) {
+	    detachRef(ref, instance, element._owner);
+	  }
+	};
+
+	module.exports = ReactRef;
 
 
 /***/ },
@@ -17721,7 +17721,7 @@ var Vignette =
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	/**
 	 * EVENT_NAME_MAP is used to determine which event fired when a
@@ -17882,7 +17882,7 @@ var Vignette =
 
 	"use strict";
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var performance;
 
@@ -18387,7 +18387,7 @@ var Vignette =
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var useHasFeature;
 	if (ExecutionEnvironment.canUseDOM) {
@@ -18441,6 +18441,41 @@ var Vignette =
 
 /***/ },
 /* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getEventTarget
+	 * @typechecks static-only
+	 */
+
+	'use strict';
+
+	/**
+	 * Gets the target node from a native browser event by accounting for
+	 * inconsistencies in browser DOM APIs.
+	 *
+	 * @param {object} nativeEvent Native browser event.
+	 * @return {DOMEventTarget} Target node.
+	 */
+	function getEventTarget(nativeEvent) {
+	  var target = nativeEvent.target || nativeEvent.srcElement || window;
+	  // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
+	  // @see http://www.quirksmode.org/js/events_properties.html
+	  return target.nodeType === 3 ? target.parentNode : target;
+	}
+
+	module.exports = getEventTarget;
+
+
+/***/ },
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -18504,41 +18539,6 @@ var Vignette =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
 
 /***/ },
-/* 127 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getEventTarget
-	 * @typechecks static-only
-	 */
-
-	'use strict';
-
-	/**
-	 * Gets the target node from a native browser event by accounting for
-	 * inconsistencies in browser DOM APIs.
-	 *
-	 * @param {object} nativeEvent Native browser event.
-	 * @return {DOMEventTarget} Target node.
-	 */
-	function getEventTarget(nativeEvent) {
-	  var target = nativeEvent.target || nativeEvent.srcElement || window;
-	  // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
-	  // @see http://www.quirksmode.org/js/events_properties.html
-	  return target.nodeType === 3 ? target.parentNode : target;
-	}
-
-	module.exports = getEventTarget;
-
-
-/***/ },
 /* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18555,7 +18555,7 @@ var Vignette =
 
 	'use strict';
 
-	var escapeTextContentForBrowser = __webpack_require__(79);
+	var escapeTextContentForBrowser = __webpack_require__(76);
 
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -18588,14 +18588,14 @@ var Vignette =
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(156);
-	var ExecutionEnvironment = __webpack_require__(42);
+	var CSSProperty = __webpack_require__(157);
+	var ExecutionEnvironment = __webpack_require__(43);
 
-	var camelizeStyleName = __webpack_require__(157);
-	var dangerousStyleValue = __webpack_require__(158);
-	var hyphenateStyleName = __webpack_require__(159);
-	var memoizeStringOnly = __webpack_require__(160);
-	var warning = __webpack_require__(45);
+	var camelizeStyleName = __webpack_require__(158);
+	var dangerousStyleValue = __webpack_require__(159);
+	var hyphenateStyleName = __webpack_require__(160);
+	var memoizeStringOnly = __webpack_require__(161);
+	var warning = __webpack_require__(47);
 
 	var processStyleName = memoizeStringOnly(function(styleName) {
 	  return hyphenateStyleName(styleName);
@@ -18773,11 +18773,11 @@ var Vignette =
 
 	'use strict';
 
-	var ReactComponentEnvironment = __webpack_require__(126);
-	var ReactMultiChildUpdateTypes = __webpack_require__(161);
+	var ReactComponentEnvironment = __webpack_require__(127);
+	var ReactMultiChildUpdateTypes = __webpack_require__(162);
 
-	var ReactReconciler = __webpack_require__(37);
-	var ReactChildReconciler = __webpack_require__(162);
+	var ReactReconciler = __webpack_require__(38);
+	var ReactChildReconciler = __webpack_require__(163);
 
 	/**
 	 * Updating children of a component may trigger recursive updates. The depth is
@@ -19209,8 +19209,8 @@ var Vignette =
 
 	var PooledClass = __webpack_require__(49);
 
-	var assign = __webpack_require__(39);
-	var getTextContentAccessor = __webpack_require__(163);
+	var assign = __webpack_require__(40);
+	var getTextContentAccessor = __webpack_require__(156);
 
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -19448,7 +19448,7 @@ var Vignette =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(150);
+	var SyntheticUIEvent = __webpack_require__(149);
 	var ViewportMetrics = __webpack_require__(124);
 
 	var getEventModifierState = __webpack_require__(164);
@@ -19625,7 +19625,7 @@ var Vignette =
 	'use strict';
 
 	var Danger = __webpack_require__(166);
-	var ReactMultiChildUpdateTypes = __webpack_require__(161);
+	var ReactMultiChildUpdateTypes = __webpack_require__(162);
 
 	var setTextContent = __webpack_require__(167);
 	var invariant = __webpack_require__(51);
@@ -19765,7 +19765,7 @@ var Vignette =
 
 	'use strict';
 
-	var ReactPropTypes = __webpack_require__(36);
+	var ReactPropTypes = __webpack_require__(37);
 
 	var invariant = __webpack_require__(51);
 
@@ -19929,7 +19929,7 @@ var Vignette =
 	 * @typechecks
 	 */
 
-	var emptyFunction = __webpack_require__(47);
+	var emptyFunction = __webpack_require__(46);
 
 	/**
 	 * Upstream version of event listener. Does not take into account specific
@@ -20062,9 +20062,9 @@ var Vignette =
 
 	var ReactDOMSelection = __webpack_require__(168);
 
-	var containsNode = __webpack_require__(108);
+	var containsNode = __webpack_require__(107);
 	var focusNode = __webpack_require__(165);
-	var getActiveElement = __webpack_require__(144);
+	var getActiveElement = __webpack_require__(152);
 
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -20202,7 +20202,7 @@ var Vignette =
 	var PooledClass = __webpack_require__(49);
 	var ReactBrowserEventEmitter = __webpack_require__(61);
 
-	var assign = __webpack_require__(39);
+	var assign = __webpack_require__(40);
 
 	function ReactPutListenerQueue() {
 	  this.listenersToPut = [];
@@ -20254,39 +20254,6 @@ var Vignette =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * @providesModule getActiveElement
-	 * @typechecks
-	 */
-
-	/**
-	 * Same as document.activeElement but wraps in a try-catch block. In IE it is
-	 * not safe to call document.activeElement if there is nothing focused.
-	 *
-	 * The activeElement will be null only if the document body is not yet defined.
-	 */
-	function getActiveElement() /*?DOMElement*/ {
-	  try {
-	    return document.activeElement || document.body;
-	  } catch (e) {
-	    return document.body;
-	  }
-	}
-
-	module.exports = getActiveElement;
-
-
-/***/ },
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
 	 * @providesModule SyntheticClipboardEvent
 	 * @typechecks static-only
 	 */
@@ -20325,7 +20292,7 @@ var Vignette =
 
 
 /***/ },
-/* 146 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20342,7 +20309,7 @@ var Vignette =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(150);
+	var SyntheticUIEvent = __webpack_require__(149);
 
 	/**
 	 * @interface FocusEvent
@@ -20368,7 +20335,7 @@ var Vignette =
 
 
 /***/ },
-/* 147 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20385,9 +20352,9 @@ var Vignette =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(150);
+	var SyntheticUIEvent = __webpack_require__(149);
 
-	var getEventCharCode = __webpack_require__(152);
+	var getEventCharCode = __webpack_require__(151);
 	var getEventKey = __webpack_require__(169);
 	var getEventModifierState = __webpack_require__(164);
 
@@ -20459,7 +20426,7 @@ var Vignette =
 
 
 /***/ },
-/* 148 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20502,7 +20469,7 @@ var Vignette =
 
 
 /***/ },
-/* 149 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20519,7 +20486,7 @@ var Vignette =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(150);
+	var SyntheticUIEvent = __webpack_require__(149);
 
 	var getEventModifierState = __webpack_require__(164);
 
@@ -20554,7 +20521,7 @@ var Vignette =
 
 
 /***/ },
-/* 150 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20573,7 +20540,7 @@ var Vignette =
 
 	var SyntheticEvent = __webpack_require__(64);
 
-	var getEventTarget = __webpack_require__(127);
+	var getEventTarget = __webpack_require__(126);
 
 	/**
 	 * @interface UIEvent
@@ -20620,7 +20587,7 @@ var Vignette =
 
 
 /***/ },
-/* 151 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20685,7 +20652,7 @@ var Vignette =
 
 
 /***/ },
-/* 152 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -20738,6 +20705,39 @@ var Vignette =
 	}
 
 	module.exports = getEventCharCode;
+
+
+/***/ },
+/* 152 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule getActiveElement
+	 * @typechecks
+	 */
+
+	/**
+	 * Same as document.activeElement but wraps in a try-catch block. In IE it is
+	 * not safe to call document.activeElement if there is nothing focused.
+	 *
+	 * The activeElement will be null only if the document body is not yet defined.
+	 */
+	function getActiveElement() /*?DOMElement*/ {
+	  try {
+	    return document.activeElement || document.body;
+	  } catch (e) {
+	    return document.body;
+	  }
+	}
+
+	module.exports = getActiveElement;
 
 
 /***/ },
@@ -20934,6 +20934,47 @@ var Vignette =
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * @providesModule getTextContentAccessor
+	 */
+
+	'use strict';
+
+	var ExecutionEnvironment = __webpack_require__(43);
+
+	var contentKey = null;
+
+	/**
+	 * Gets the key used to access text content on a DOM node.
+	 *
+	 * @return {?string} Key used to access text content.
+	 * @internal
+	 */
+	function getTextContentAccessor() {
+	  if (!contentKey && ExecutionEnvironment.canUseDOM) {
+	    // Prefer textContent to innerText because many browsers support both but
+	    // SVG <text> elements don't support innerText even when <div> does.
+	    contentKey = 'textContent' in document.documentElement ?
+	      'textContent' :
+	      'innerText';
+	  }
+	  return contentKey;
+	}
+
+	module.exports = getTextContentAccessor;
+
+
+/***/ },
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
 	 * @providesModule CSSProperty
 	 */
 
@@ -21052,7 +21093,7 @@ var Vignette =
 
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21098,7 +21139,7 @@ var Vignette =
 
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21115,7 +21156,7 @@ var Vignette =
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(156);
+	var CSSProperty = __webpack_require__(157);
 
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 
@@ -21160,7 +21201,7 @@ var Vignette =
 
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21205,7 +21246,7 @@ var Vignette =
 
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21242,7 +21283,7 @@ var Vignette =
 
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21279,7 +21320,7 @@ var Vignette =
 
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -21296,11 +21337,11 @@ var Vignette =
 
 	'use strict';
 
-	var ReactReconciler = __webpack_require__(37);
+	var ReactReconciler = __webpack_require__(38);
 
 	var flattenChildren = __webpack_require__(172);
-	var instantiateReactComponent = __webpack_require__(110);
-	var shouldUpdateReactComponent = __webpack_require__(112);
+	var instantiateReactComponent = __webpack_require__(109);
+	var shouldUpdateReactComponent = __webpack_require__(111);
 
 	/**
 	 * ReactChildReconciler provides helpers for initializing or updating a set of
@@ -21410,47 +21451,6 @@ var Vignette =
 
 
 /***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule getTextContentAccessor
-	 */
-
-	'use strict';
-
-	var ExecutionEnvironment = __webpack_require__(42);
-
-	var contentKey = null;
-
-	/**
-	 * Gets the key used to access text content on a DOM node.
-	 *
-	 * @return {?string} Key used to access text content.
-	 * @internal
-	 */
-	function getTextContentAccessor() {
-	  if (!contentKey && ExecutionEnvironment.canUseDOM) {
-	    // Prefer textContent to innerText because many browsers support both but
-	    // SVG <text> elements don't support innerText even when <div> does.
-	    contentKey = 'textContent' in document.documentElement ?
-	      'textContent' :
-	      'innerText';
-	  }
-	  return contentKey;
-	}
-
-	module.exports = getTextContentAccessor;
-
-
-/***/ },
 /* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21554,10 +21554,10 @@ var Vignette =
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var createNodesFromMarkup = __webpack_require__(173);
-	var emptyFunction = __webpack_require__(47);
+	var emptyFunction = __webpack_require__(46);
 	var getMarkupWrap = __webpack_require__(174);
 	var invariant = __webpack_require__(51);
 
@@ -21741,9 +21741,9 @@ var Vignette =
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(42);
-	var escapeTextContentForBrowser = __webpack_require__(79);
-	var setInnerHTML = __webpack_require__(111);
+	var ExecutionEnvironment = __webpack_require__(43);
+	var escapeTextContentForBrowser = __webpack_require__(76);
+	var setInnerHTML = __webpack_require__(110);
 
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -21787,10 +21787,10 @@ var Vignette =
 
 	'use strict';
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var getNodeForCharacterOffset = __webpack_require__(175);
-	var getTextContentAccessor = __webpack_require__(163);
+	var getTextContentAccessor = __webpack_require__(156);
 
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -22005,7 +22005,7 @@ var Vignette =
 
 	'use strict';
 
-	var getEventCharCode = __webpack_require__(152);
+	var getEventCharCode = __webpack_require__(151);
 
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -22187,7 +22187,7 @@ var Vignette =
 	'use strict';
 
 	var traverseAllChildren = __webpack_require__(65);
-	var warning = __webpack_require__(45);
+	var warning = __webpack_require__(47);
 
 	/**
 	 * @param {function} traverseContext Context passed through traversal.
@@ -22248,7 +22248,7 @@ var Vignette =
 
 	/*jslint evil: true, sub: true */
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var createArrayFromMixed = __webpack_require__(176);
 	var getMarkupWrap = __webpack_require__(174);
@@ -22338,7 +22338,7 @@ var Vignette =
 	 * @providesModule getMarkupWrap
 	 */
 
-	var ExecutionEnvironment = __webpack_require__(42);
+	var ExecutionEnvironment = __webpack_require__(43);
 
 	var invariant = __webpack_require__(51);
 
