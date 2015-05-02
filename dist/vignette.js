@@ -1,19 +1,71 @@
-'use strict';
+var ImageLoader = React.createClass({
 
-// Node modules
-var React = require('react/addons');
+  mixins: [React.addons.PureRenderMixin],
 
-// Custom components
-var ImageView = require('./imageview');
-var Slider = require('./slider');
+  componentDidMount: function() {
+    // window.setTimeout(function() {
+    //   console.log('...', React.findDOMNode(this.refs.img1));
+    //   this.props.onImageInit();
+    // }.bind(this), 10000);
+    console.log('> img for', this.props.title, 'mounted');
+  },
 
-/**
- * The Gallery
- *
- * Displays a gallery of images
- */
+  render: function() {
+    return React.createElement('img', {
+      className: 'img',
+      src: this.props.url,
+      alt: this.props.title,
+      onLoad: this.props.onImageLoaded
+    });
+  }
+});
+
+var ImageView = React.createClass({
+  mixins: [React.addons.PureRenderMixin],
+
+  onImageInit: function(width, height) {
+    console.log('started loading image', this.props.title, 'size:', width, 'by', height);
+  },
+
+  onImageLoaded: function() {
+    console.log('image:', this.props.title, 'loaded.');
+  },
+
+  // componentDidMount: function() {
+  //   console.log('imageview for', this.props.title, 'mounted!', this.getDOMNode());
+  // },
+
+  render: function() {
+    var cn = 'img-container';
+    if (this.props.current) {
+      cn = cn + ' current';
+    }
+    if (this.props.prev) {
+      cn = cn + ' prev';
+    }
+    if (this.props.next) {
+      cn = cn + ' next';
+    }
+    return React.createElement('div', {className: cn},
+      React.createElement(ImageLoader, {
+        key: this.props.key,
+        url: this.props.url,
+        title: this.props.title,
+        onImageInit: this.onImageInit,
+        onLoad: this.onImageLoaded
+      })
+    );
+  }
+});
+
+var Slider = React.createClass({
+  mixins: [React.addons.PureRenderMixin],
+  render: function() {
+    return React.createElement('div', {className: 'slider-container'}, this.props.imageViews);
+  }
+});
+
 var Gallery = React.createClass({
-
   mixins: [React.addons.PureRenderMixin],
 
   componentDidMount: function() {
@@ -50,7 +102,7 @@ var Gallery = React.createClass({
     var subComponents = [];
     var imageViews = [];
 
-    // create ImageView components
+    // // create ImageView components
     this.props.images.forEach(function(img, index) {
       imageViews.push(React.createElement(ImageView, {
         current: index === this.state.current,
@@ -78,5 +130,3 @@ var Gallery = React.createClass({
     return React.createElement('div', {className: 'rv-container'}, subComponents);
   }
 });
-
-module.exports = Gallery;

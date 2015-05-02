@@ -3,17 +3,26 @@
 // Node modules
 var React = require('react/addons');
 
+var ImageLoader = require('./imageloader');
 /**
- * Img sub component for React-vignette
+ * ImageView sub component for React-vignette
  *
  */
 var Img = React.createClass({
 
   mixins: [React.addons.PureRenderMixin],
 
-  getInitialState: function() {
-    return {}
+  onImageInit: function(width, height) {
+    console.log('started loading image', this.props.title, 'size:', width, 'by', height);
   },
+
+  onImageLoaded: function() {
+    console.log('image:', this.props.title, 'loaded.');
+  },
+
+  // componentDidMount: function() {
+  //   console.log('imageview for', this.props.title, 'mounted!', this.getDOMNode());
+  // },
 
   render: function() {
     var cn = 'img-container';
@@ -27,10 +36,12 @@ var Img = React.createClass({
       cn = cn + ' next';
     }
     return React.createElement('div', {className: cn},
-      React.createElement('img', {
-        className: 'img',
-        src: this.props.url,
-        alt: this.props.title
+      React.createElement(ImageLoader, {
+        key: this.props.key,
+        url: this.props.url,
+        title: this.props.title,
+        onImageInit: this.onImageInit,
+        onLoad: this.onImageLoaded
       })
     );
   }
