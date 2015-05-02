@@ -11,20 +11,21 @@ var ImageLoader = React.createClass({
 
   mixins: [React.addons.PureRenderMixin],
 
+  onImageLoaded: function() {
+    var el = React.findDOMNode(this);
+    this.props.onImageLoaded(el.width, el.height);
+  },
+
   componentDidMount: function() {
-    // window.setTimeout(function() {
-    //   console.log('...', React.findDOMNode(this.refs.img1));
-    //   this.props.onImageInit();
-    // }.bind(this), 10000);
-    console.log('> img for', this.props.title, 'mounted');
+    // this.props.onImageInit(React.findDOMNode(this).width, React.findDOMNode(this).height);
   },
 
   render: function() {
     return React.createElement('img', {
-      className: 'img',
+      className: 'img ' + this.props.className,
       src: this.props.url,
       alt: this.props.title,
-      onLoad: this.props.onImageLoaded
+      onLoad: this.onImageLoaded
     });
   }
 });

@@ -157,27 +157,49 @@ var Vignette =
 
 	// Node modules
 	var React = __webpack_require__(2);
-
-	var ImageLoader = __webpack_require__(5);
+	var Spinner = __webpack_require__(5);
+	var ImageLoader = __webpack_require__(6);
 	/**
 	 * ImageView sub component for React-vignette
 	 *
 	 */
-	var Img = React.createClass({
+	var ImageView = React.createClass({
 
 	  mixins: [React.addons.PureRenderMixin],
 
-	  onImageInit: function(width, height) {
-	    console.log('started loading image', this.props.title, 'size:', width, 'by', height);
+	  getInitialState: function() {
+	    return {
+	      imageLoaded: false,
+	      divStyle: {}
+	    };
 	  },
 
-	  onImageLoaded: function() {
-	    console.log('image:', this.props.title, 'loaded.');
+	  onImageInit: function() {
+	    console.log('started loading image', this.props.title);
 	  },
 
-	  // componentDidMount: function() {
-	  //   console.log('imageview for', this.props.title, 'mounted!', this.getDOMNode());
-	  // },
+	  onImageLoaded: function(imgWidth, imgHeight) {
+	    console.log('image:', this.props.title, 'loaded.', imgWidth, imgHeight);
+	    this.setState({
+	      imageLoaded: true
+	    });
+	    var elContainer = React.findDOMNode(this);
+	    if (elContainer.offsetWidth > imgWidth) {
+	      // center image using padding
+	      var pad = (elContainer.offsetWidth - imgWidth) / 2;
+	      console.log('paddingLeft for', this.props.title, '=', pad);
+	      this.setState({
+	        divStyle: {
+	          'padding-left': pad + 'px'
+	        }
+	      });
+	    }
+	    else {
+	      // center image using scroll
+	      elContainer.scrollLeft =  (imgWidth / 2) - (elContainer.offsetWidth / 2);
+	      console.log('centering image', this.props.title, 'using scroll',  (imgWidth / 2) - (elContainer.offsetWidth / 2));
+	    }
+	  },
 
 	  render: function() {
 	    var cn = 'img-container';
@@ -190,19 +212,26 @@ var Vignette =
 	    if (this.props.next) {
 	      cn = cn + ' next';
 	    }
-	    return React.createElement('div', {className: cn},
-	      React.createElement(ImageLoader, {
-	        key: this.props.key,
-	        url: this.props.url,
-	        title: this.props.title,
-	        onImageInit: this.onImageInit,
-	        onLoad: this.onImageLoaded
-	      })
+	    console.log('this.state.imageLoaded=', this.state.imageLoaded);
+	    return React.createElement('div', {className: cn, style: this.state.divStyle},
+	      [
+	        React.createElement(Spinner, {
+	          className: (this.state.imageLoaded ? 'hidden' : ''),
+	        }),
+	        React.createElement(ImageLoader, {
+	          className: (this.state.imageLoaded ? '' : 'invisible'),
+	          key: this.props.key,
+	          url: this.props.url,
+	          title: this.props.title,
+	          onImageInit: this.onImageInit,
+	          onImageLoaded: this.onImageLoaded
+	        })
+	      ]
 	    );
 	  }
 	});
 
-	module.exports = Img;
+	module.exports = ImageView;
 
 
 /***/ },
@@ -240,6 +269,37 @@ var Vignette =
 	var React = __webpack_require__(2);
 
 	/**
+	 * Spinner sub component for React-vignette
+	 * Adapted from http://tobiasahlin.com/spinkit/
+	 */
+	var Spinner = React.createClass({
+
+	  mixins: [React.addons.PureRenderMixin],
+
+	  render: function() {
+	    return React.createElement(
+	      'div',
+	      {className: 'spinner ' + this.props.className},
+	      [ React.createElement('div', {className: 'bounce1'}),
+	        React.createElement('div', {className: 'bounce2'}),
+	        React.createElement('div', {className: 'bounce3'})  ]
+	    );
+	  }
+	});
+
+	module.exports = Spinner;
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	// Node modules
+	var React = __webpack_require__(2);
+
+	/**
 	 * ImageView sub component for React-vignette
 	 *
 	 */
@@ -247,20 +307,21 @@ var Vignette =
 
 	  mixins: [React.addons.PureRenderMixin],
 
+	  onImageLoaded: function() {
+	    var el = React.findDOMNode(this);
+	    this.props.onImageLoaded(el.width, el.height);
+	  },
+
 	  componentDidMount: function() {
-	    // window.setTimeout(function() {
-	    //   console.log('...', React.findDOMNode(this.refs.img1));
-	    //   this.props.onImageInit();
-	    // }.bind(this), 10000);
-	    console.log('> img for', this.props.title, 'mounted');
+	    // this.props.onImageInit(React.findDOMNode(this).width, React.findDOMNode(this).height);
 	  },
 
 	  render: function() {
 	    return React.createElement('img', {
-	      className: 'img',
+	      className: 'img ' + this.props.className,
 	      src: this.props.url,
 	      alt: this.props.title,
-	      onLoad: this.props.onImageLoaded
+	      onLoad: this.onImageLoaded
 	    });
 	  }
 	});
