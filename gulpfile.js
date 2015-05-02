@@ -22,6 +22,7 @@ gulp.task('react:compile', function(callback) {
       },
       externals: {
         react: 'React',
+        'react/addons': 'React',
         underscore: '_'
       }
     }, function(err, stats) {
